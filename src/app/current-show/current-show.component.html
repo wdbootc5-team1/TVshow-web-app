@@ -1,1 +1,13 @@
-<p>current-show works!</p>
+<div>
+  <div>
+    <span>{{ current.channel }}</span>
+    <span>{{ current.showname }}</span>
+  </div>
+  <div>
+    <img [src]="current.showimage" />
+    <span>{{ current.date }}</span>
+  </div>
+  <div>
+    {{ current.showdescription }}
+  </div>
+</div>
