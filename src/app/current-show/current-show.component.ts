@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ICurrentShow } from '../icurrent-show';
 
 @Component({
   selector: 'app-current-show',
@@ -6,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./current-show.component.css']
 })
 export class CurrentShowComponent implements OnInit {
-
-  constructor() { }
+current:ICurrentShow
+  constructor() { 
+    this.current = {
+      channel: 'PBSKids',
+      showname: 'Mash And the Bear',
+      airdate: new Date(),
+      showimage: '',
+      showdescription:'Enjoy the Show!!'
+    }
+  }
 
   ngOnInit() {
   }
