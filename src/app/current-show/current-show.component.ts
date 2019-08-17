@@ -10,6 +10,7 @@ export class CurrentShowComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
