@@ -7,7 +7,5 @@
     <img [src]="current.showimage" />
     <span>{{ current.date }}</span>
   </div>
-  <div>
-    {{ current.showdescription }}
-  </div>
+  <div [innerHTML]="current.showdescription"></div>
 </div>

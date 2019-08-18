@@ -1,8 +1,8 @@
 import { Time } from '@angular/common';
 
 export interface ICurrentShow {
-  channel: string
-  showname: String
+  channel: number
+  showname: string
   airdate: Date
   showimage: string
   showdescription: string
