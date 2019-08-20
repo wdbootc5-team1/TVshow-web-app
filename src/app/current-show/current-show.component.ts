@@ -14,7 +14,7 @@ export class CurrentShowComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.ShowService.getCurrentTVshow(3).subscribe(data => this.current = data);
+    this.ShowService.getCurrentTVshow('boy').subscribe(data => this.current = data);
   }
 
 }
