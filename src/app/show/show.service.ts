@@ -47,6 +47,8 @@ export class ShowService {
       channel: data.id,
       showname: data.name,
       airdate: data.premiered,
+      time: data.schedule.time,
+      days: data.schedule.days,
       showimage: data.image.medium,
       showdescription: data.summary
     };

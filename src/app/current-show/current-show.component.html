@@ -1,14 +1,17 @@
-<div>
+<div *ngIf="current">
   <div>
-    <span> {{ current.channel }}</span>
+    <span><b>ID:</b> {{ current.channel }}</span>
   </div>
   <div>
-    <span>{{ current.showname }}</span>
+    <span><b>Show name:</b> {{ current.showname }}</span>
   </div>
   <div>
     <img [src]="current.showimage" />
     <div>
-      <span>{{ current.airdate }}</span>
+      <span><b>Air date:</b> {{ current.airdate }}</span><br>
+      <div *ngIf="current.time"><span><b>Time:</b> {{ current.time }}</span>
+      <br>
+      <span><b>Days:</b> {{ current.days }}</span></div>
     </div>
   </div>
   <div [innerHTML]="current.showdescription"></div>
