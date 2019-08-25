@@ -1,11 +1,15 @@
 <div>
   <div>
-    <span>{{ current.channel }}</span>
+    <span> {{ current.channel }}</span>
+  </div>
+  <div>
     <span>{{ current.showname }}</span>
   </div>
   <div>
     <img [src]="current.showimage" />
-    <span>{{ current.date }}</span>
+    <div>
+      <span>{{ current.airdate }}</span>
+    </div>
   </div>
   <div [innerHTML]="current.showdescription"></div>
 </div>

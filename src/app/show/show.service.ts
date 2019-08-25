@@ -26,7 +26,8 @@ interface ICurrentShowData {
   summary: string;
 }
 
-@Injectable({
+@Injectable
+  ({
   providedIn: "root"
 })
 export class ShowService {
