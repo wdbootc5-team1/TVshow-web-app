@@ -1,1 +1,15 @@
-<p>current-show works!</p>
+<div>
+  <div>
+    <span> {{ current.channel }}</span>
+  </div>
+  <div>
+    <span>{{ current.showname }}</span>
+  </div>
+  <div>
+    <img [src]="current.showimage" />
+    <div>
+      <span>{{ current.airdate }}</span>
+    </div>
+  </div>
+  <div [innerHTML]="current.showdescription"></div>
+</div>

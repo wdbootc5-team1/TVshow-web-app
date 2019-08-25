@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from "@angular/core";
+import { ICurrentShow } from "../icurrent-show";
 
 @Component({
-  selector: 'app-current-show',
-  templateUrl: './current-show.component.html',
-  styleUrls: ['./current-show.component.css']
+  selector: "app-current-show",
+  templateUrl: "./current-show.component.html",
+  styleUrls: ["./current-show.component.css"]
 })
 export class CurrentShowComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  @Input() current: ICurrentShow;
+  constructor() {}
+  ngOnInit() {}
 }
